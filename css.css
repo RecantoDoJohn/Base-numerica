@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 50svh;
+    background-size: 800px;
+    background-image: image-set("sim.png");
+    animation: 20s move infinite linear;
+}
+/*header {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    font-size: 17px;
+    font-size: 2lh;
+} */
+
+.pola {
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background-color: antiquewhite;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 60px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.534);
+    border-radius: 5px;
+    transition-duration: 0.5s ;
+}
+.tela {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.5lh;
+    width: 300px;
+    margin: auto;
+    background-image: linear-gradient(rgb(11, 106, 161), rgb(9, 69, 95));
+    background-color:rgb(30, 142, 43);
+    aspect-ratio: 1/1;
+    text-align: center;
+    padding: 10px;
+}
+input {
+    font-size: 17px;
+    width: 140px;
+    text-align: center;
+}
+select {
+    text-align: center;
+    font-size: 17px;
+    width: 100px;
+}
+.oscoisa {
+    padding: 20px;
+    font-size: 20px;
+}
+.resposta {
+    font-size: 1lh;
+    font-style: italic;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-shadow: 1px 1px black;
+    padding: 10px;
+    color: antiquewhite;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+}
+button {
+    border: 3px solid ;
+    background-color: rgba(127, 255, 212, 0);
+    font-size: 1lh;
+    transition-duration: 0.5s;
+}
+/*
+.resposta::after {
+    content: 'Processando';
+    animation: cilar 2s infinite;
+} */
+@keyframes move {
+    from {
+        background-position: top right ;
+    } to {
+        background-position: bottom left;
+    }
+}
+
+@keyframes cilar {
+    0%, 100% {
+        content: "rocessando";
+    }
+    25% {
+        content: "Processando.";
+    }
+    50% {
+        content: "Processando..";
+    }
+    75% {
+        content: "Processando...";
+    }
+}
+
+.pola:hover {
+    width: 390px;
+    height: 430px;
+}
+button:hover {
+    background-color: rgb(10, 146, 14);
+    cursor: pointer;
+}
+
+/*
+@media screen and (max-width:600px){
+    .body{
+      width:400px;
+      height:1200px;
+    }	
+    .pola {
+        width: 270px;
+        height: 250px;
+    }
+    .tela {
+        width: 200px;
+        height: 200px;
+    }
+    button {
+        font-size: 20px;
+    }
+    .pola:hover {
+        width: 280px;
+        height: 256px;
+    } 
+} */
